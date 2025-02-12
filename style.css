@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.flex a i {
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('https://storage.googleapis.com/a1aa/image/bi3Z0tCH6jSsGxNW80y_JJStb9r9Mgje--wGDngI-jo.jpg') center/cover no-repeat;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+}
+
+/* Cart Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+td img {
+  width: 60px;
+  border-radius: 5px;
+}
+
+td .delete {
+  color: red;
+  cursor: pointer;
+}
+
+/* Quantity Input */
+.quantity-input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Cart Totals */
+#cart-subtotal,
+#cart-total {
+  font-weight: bold;
+}
+
+#cart-total {
+  color: #ffcc00;
+}
+
+/* Checkout Button */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ffcc00;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
